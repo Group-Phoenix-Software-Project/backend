@@ -20,6 +20,7 @@ func Connect(){
 	DB = connection
 
 	connection.AutoMigrate(&models.Employee{})
+	connection.AutoMigrate(&models.Feedbacks{})
 
 
 

@@ -11,12 +11,13 @@ type Employee struct{
 	Id int `gorm:"primary, autoIncrement" json:"id"`
 	FirstName string `json:"firstName"`
 	LastName string `json:"lastName"`
-	Designatation string `json:"designation"`
+	Designation string `json:"designation"`
 	Address string `json:"address"`
 	Email string `json:"email"`
 	Password string `json:"password"`
 	DOB *time.Time `json:"dob"`
+	ContactNumber int `json:"contactno"`
 	Salary float32 `json:"salary"`
-	Position string `json:"position"`
+	Gender string `json:"gender"`
 
 }
